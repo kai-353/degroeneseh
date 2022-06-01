@@ -4,18 +4,18 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/style.css" />
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootswatch@4.5.2/dist/litera/bootstrap.min.css"
       integrity="sha384-enpDwFISL6M3ZGZ50Tjo8m65q06uLVnyvkFO3rsoW0UC15ATBFz3QEhr3hmxpYsn"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="css/style.css" />
     <link rel="icon" href="images/logo.png">
     <title>De groene SEH</title>
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-lg navbar-dark nav-color">
       <div class="container-fluid">
         <a class="navbar-brand" href="#"><img src="images/logo.png" alt="logo" height="50px" width="50px"></a>
         <button
@@ -83,12 +83,12 @@
         <div class="middle">
           <div class="text">
             <h1>Awareness and Best Practice for Change</h1>
-            <p>
+            <!-- <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
               Blanditiis magni alias illum odio, provident maiores quibusdam
               voluptates eius consequuntur deleniti possimus enim quam eum nemo
               amet molestiae hic, dolore molestias!
-            </p>
+            </p> -->
           </div>
         </div>
       </div>
@@ -131,7 +131,7 @@
         </div>
         <div class="half right">
           <img
-            src="http://via.placeholder.com/400x400"
+            src="./images/main2.jpeg"
             alt="groepsfoto"
             height="400px"
             width="400px"
@@ -143,7 +143,7 @@
       <div class="container">
         <div class="cards">
           <div class="card">
-            <div class="card-body">
+            <div class="card-body" id="card-1">
               <h5 class="card-title">Visie</h5>
               <p class="card-text">
                 De impact van de gezondheidszorg op klimaatverandering is volledig
@@ -155,7 +155,7 @@
             </div>
           </div>
           <div class="card">
-            <div class="card-body">
+            <div class="card-body" id="card-2">
               <h5 class="card-title">Missie</h5>
               <p class="card-text">
                 De drijvende kracht zijn in het informeren, verbinden en
@@ -166,7 +166,7 @@
             </div>
           </div>
           <div class="card">
-            <div class="card-body">
+            <div class="card-body" id="card-3">
               <h5 class="card-title">Doelstelling</h5>
               <p class="card-text">
                 <ul>
@@ -191,7 +191,7 @@
         <p>Bereik ons via <a href="mailto:degroeneseh@nvsha.nl">email</a> of post op <a href="#">ons forum</a></p>
     </section>
     
-  <footer class="py-5 bg-success text-white">
+  <footer class="py-5 nav-color text-white">
     <div class="container">
 
       <div class="row justify-content-around">
@@ -207,15 +207,15 @@
         </div>
   
         <div class="col-4 offset-1">
-          <form>
             <h5>Abonneer op onze nieuwsbrief</h5>
-            <p>Blijf op de hoogte van ons project</p>
-            <div class="d-flex w-100 gap-2">
-              <input id="newsletter1" type="text" class="form-control" placeholder="Email adres">
-              <button class="btn btn-primary ml-2" type="button">Abonneer</button>
-            </div>
-          </form>
+            <p>Blijf op de hoogte van onze nieuwste ontwikkelingen</p>
         </div>
+        <form>
+        <div class="d-flex w-100 gap-2">
+            <input id="newsletter1" type="text" class="form-control" placeholder="Email adres">
+            <button class="btn btn-primary ml-2" type="button">Abonneer</button>
+          </div>
+        </form>
       </div>
     </div>
   </footer>

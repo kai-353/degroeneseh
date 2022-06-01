@@ -1,12 +1,12 @@
 :root {
-  --welcome-height: 800px;
+  --welcome-height: 90vh;
   --intro-height: 400px;
   --about-height: 600px;
   --goals-height: 750px;
   --platform-height: 300px;
 }
 
-p {
+* {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji",
     "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !important;
@@ -14,12 +14,13 @@ p {
 
 #welcome {
   height: var(--welcome-height);
-  /* background-color: aquamarine; */
-  background-image: url(http://via.placeholder.com/1680x800);
+  /* background-image: url(http://via.placeholder.com/1680x800); */
+  background-image: url(../images/main4.jpeg);
+  background-repeat: round;
 }
 
 #intro {
-  height: var(--intro-height);
+  min-height: var(--intro-height);
   /* background-color: #f6f7fb; */
   /* background-image: url(http://via.placeholder.com/1680x900); */
 }
@@ -82,6 +83,7 @@ p {
 #about .left {
   flex-direction: column;
   align-items: flex-start;
+  margin-bottom: 60px;
 }
 
 #about .right {
@@ -116,4 +118,78 @@ p {
 #goals .readmore .btn {
   margin-right: 20px;
   float: right;
+}
+
+#goals #card-1 {
+  /* background-color: #a7d6af; */
+  background-color: #6bc9bb;
+  color: #fafafa;
+  /* color: #333; */
+}
+
+#goals #card-2 {
+  background-color: #80c780;
+  color: #fafafa;
+}
+
+#goals #card-3 {
+  /* background-color: #4fbc7c; */
+  background-color: #14856d;
+  color: #fafafa;
+}
+
+.nav-color {
+  background-color: #4fbc7c;
+}
+
+.btn:hover {
+  transform: scale(0.98);
+}
+
+@media (max-width: 1300px) {
+  #goals .card {
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 1000px) {
+  #intro .container {
+    width: 80%;
+  }
+
+  #about {
+    height: auto;
+  }
+
+  #about .container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #about .half {
+    width: 80%;
+  }
+
+  #goals {
+    height: auto;
+  }
+
+  #goals .cards {
+    margin-top: 20px;
+    flex-direction: column;
+  }
+
+  #goals .card {
+    width: 80%;
+    margin: 15px 0;
+  }
+
+  #goals .readmore {
+    height: 100px;
+  }
+
+  #platform {
+    width: 100%;
+    padding: 0 10%;
+  }
 }
