@@ -15,7 +15,6 @@
 #welcome {
   height: var(--welcome-height);
   /* background-image: url(http://via.placeholder.com/1680x800); */
-  background-image: url(../images/main4.jpeg);
   background-repeat: round;
 }
 
@@ -51,6 +50,7 @@
 #welcome .text {
   max-width: 560px;
   float: left;
+  color: #fff;
 }
 
 #intro .spacing-default {
